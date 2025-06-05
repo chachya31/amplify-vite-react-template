@@ -1,4 +1,4 @@
-import { Button, Heading, Image, Text, useAuthenticator, useTheme, View } from "@aws-amplify/ui-react";
+import { Image, Text, useTheme, View } from "@aws-amplify/ui-react";
 
 export const components = {
   Header() {

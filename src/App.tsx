@@ -1,18 +1,18 @@
-import type { Schema } from "../amplify/data/resource";
+// import type { Schema } from "../amplify/data/resource";
 import { useAuthenticator } from "@aws-amplify/ui-react";
 // import { useEffect, useState } from "react";
-import { generateClient } from "aws-amplify/data";
+// import { generateClient } from "aws-amplify/data";
 import TodoList from "./TodoList";
 import MovieList from "./Movie";
 
-const client = generateClient<Schema>({
-  headers: async (requestOptions) => {
-    console.log(requestOptions)
-    return {
-      'My-Custom-Header': 'my value',
-    }
-  }
-});
+// const client = generateClient<Schema>({
+//   headers: async (requestOptions) => {
+//     console.log(requestOptions)
+//     return {
+//       'My-Custom-Header': 'my value',
+//     }
+//   }
+// });
 
 function App() {
   const { user, signOut } = useAuthenticator();

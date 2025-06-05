@@ -1,13 +1,14 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import { Authenticator, translations } from "@aws-amplify/ui-react";
+import { Authenticator } from "@aws-amplify/ui-react";
+// import { Authenticator, translations } from "@aws-amplify/ui-react";
 import App from "./App.tsx";
 import "./index.css";
 import { Amplify } from "aws-amplify";
 import outputs from "../amplify_outputs.json";
 import '@aws-amplify/ui-react/styles.css';
-import { components, formFields } from "./components/auth.tsx"
-import { I18n } from "aws-amplify/utils";
+import { components } from "./components/auth.tsx"
+// import { I18n } from "aws-amplify/utils";
 
 // I18n.putVocabularies(translations);
 // I18n.setLanguage('ja');

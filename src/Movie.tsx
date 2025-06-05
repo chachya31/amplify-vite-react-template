@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import type { Schema } from "../amplify/data/resource";
 import { generateClient } from 'aws-amplify/data';
-import { Card, View } from "@aws-amplify/ui-react";
+import { View } from "@aws-amplify/ui-react";
 
 const client = generateClient<Schema>()
 
