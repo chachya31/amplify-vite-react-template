@@ -10,6 +10,14 @@ const schema = a.schema({
   Todo: a
     .model({
       content: a.string(),
+      isDone: a.boolean(),
+    })
+    .authorization((allow) => [allow.owner()]),
+  Movie: a
+    .model({
+      title: a.string(),
+      releaseYear: a.integer(),
+      rating: a.float(),
     })
     .authorization((allow) => [allow.owner()]),
 });
